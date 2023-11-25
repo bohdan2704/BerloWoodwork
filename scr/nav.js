@@ -5,7 +5,7 @@ window.onscroll = function() {
 
     console.log(scrollTop);
 
-    if (scrollTop === 0) {
+    if (scrollTop < 600) {
         navbar.classList.add('scrolled')
         navbarBrand.classList.add('scrolled');
 
