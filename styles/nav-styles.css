@@ -1,11 +1,79 @@
+@import "style.css";
+
 .logo {
-    width: 120px;
+    width: 100px;
+}
+
+.logo-text {
+    font-weight: 700;
+}
+
+.container-fluid {
+    margin: 0 calc(10% - 75px);
 }
 
 .navbar {
-    background-color: #242930 !important;
+    background-color: var(--steel-dark) !important;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(232, 232, 232, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: background-color 0.5s ease;
+}
+
+/* Styles for the navbar when scrolled */
+.navbar.scrolled {
+    background-color: transparent !important; /* Set the background color when scrolled */
+}
+
+.navbar-brand {
+    margin-left: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
+    transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+
+.navbar-brand.scrolled {
+    transform: scale(1.15); /* Apply the scaling effect on hover */
 }
 
 .nav-link {
-    color: #fff !important; 
+    text-wrap: nowrap;
+    text-align: center;
+    color: white !important;
+    padding-right: 0.65rem !important;
+    padding-left: 0.65rem !important;
+}
+.nav-link:hover {
+    color: darkgrey !important;
+}
+
+.navbar-toggler-icon {
+    font-size: 24px;
+    color: white;
+}
+
+.offcanvas {
+    background: var(--steel-dark);
+}
+
+.offcanvas-title {
+    color: white;
+}
+
+.fa-phone {
+    cursor: pointer;
+    color: white;
+    font-size: 28px;
+    margin-left: 18px;
+}
+
+.btn-close {
+    margin-bottom: 0 !important;
+    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(232, 232, 232)'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e ")
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        height: 125px; /* Set your desired height value */
+        margin: 0 10%;
+    }
 }
