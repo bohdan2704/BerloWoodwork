@@ -62,7 +62,14 @@ body {
 }
 .layers__middle {
 	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+	opacity: 1;
+	transition: 1s, ease;
 }
+
+.layers__middle:hover {
+	opacity: 0;
+}
+
 .layers__front {
 	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
 }
@@ -77,8 +84,10 @@ body {
 	text-shadow: 0 0 15px #9d822b;
 }
 .layers__title {
+	cursor: pointer;
+	margin-top: 15vh;
 	font-size: calc(var(--index) * 2.65);
-	letter-spacing: calc(var(--index) / 2.25);
+	letter-spacing: calc(var(--index) / 3);
 }
 .layers__caption {
 	font-size: calc(var(--index) / 1.175);
