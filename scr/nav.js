@@ -24,12 +24,12 @@ window.onscroll = function() {
 
         if (scrollTop > lastScrollTop) {
             wasActionBefore = true;
-            currentOpacity = 0;
+            currentOpacity -= 0.3;
             currentFontSize += 0.1;
 
         } else if (wasActionBefore) {
             // console.log(currentFontSize);
-            currentOpacity = 1;
+            currentOpacity += 0.3;
             currentFontSize -= 0.1;
         }
         console.log(currentOpacity);

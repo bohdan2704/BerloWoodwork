@@ -63,7 +63,7 @@ body {
 .layers__middle {
 	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
 	opacity: 1;
-	transition: 1s, ease;
+	transition: 5s, ease;
 }
 
 .layers__middle:hover {
