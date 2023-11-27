@@ -2,133 +2,336 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/2b8fdd1fc3.js" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/2b8fdd1fc3.js"></script>
+
+    <script crossorigin="anonymous"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+
     <link href="styles/nav-styles.css" rel="stylesheet">
     <link href="styles/header-styles.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
     <title>Berlo Woodwork</title>
 
-    <link rel="stylesheet" href="styles/main.css">
+    <link href="styles/main.css" rel="stylesheet">
 
-    <script src="libs/gsap/gsap.min.js" defer></script>
-    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
-    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script defer src="libs/gsap/gsap.min.js"></script>
+    <script defer src="libs/gsap/ScrollTrigger.min.js"></script>
+    <script defer src="libs/gsap/ScrollSmoother.min.js"></script>
 
-    <script src="scr/app.js" defer></script>
+    <script defer src="scr/app.js"></script>
 </head>
 <body>
-    <nav class="navbar scrolled navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="p-3 navbar-brand scrolled" href="#">
-                <img class="logo" src="img/logo.png" alt="Logo">
-                <span class="logo-text">BERLO</span>
-            </a>
-            <button class="navbar-toggler" style="border: none; box-shadow: none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <img class="logo" src="img/logo.png" alt="Logo">
-                    <!--                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BERLO</h5>-->
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 justify-content-center">
-                        <li class="nav-item nav-item-center">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">OFFERS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">PRICE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">GALLERY</a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <i class="fa-solid fa-phone hover-element"></i>
-                        </li>
+<nav class="navbar scrolled navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+        <a class="p-3 navbar-brand scrolled" href="#">
+            <img alt="Logo" class="logo" src="img/logo.png">
+            <span class="logo-text">BERLO</span>
+        </a>
+        <button aria-controls="offcanvasNavbar" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#offcanvasNavbar"
+                data-bs-toggle="offcanvas" style="border: none; box-shadow: none" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div aria-labelledby="offcanvasNavbarLabel" class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1">
+            <div class="offcanvas-header">
+                <img alt="Logo" class="logo" src="img/logo.png">
+                <!--                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BERLO</h5>-->
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 justify-content-center">
+                    <li class="nav-item nav-item-center">
+                        <a aria-current="page" class="nav-link active" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">OFFERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GALLERY</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <i class="fa-solid fa-phone hover-element"></i>
+                    </li>
 
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <div class="wrapper">
+<div class="wrapper">
+    <div class="content">
+
+        <header class="main-header">
+
+
+            <div class="layers">
+                <div class="layer__header">
+                    <div class="layers__title">BERLO WOODWORK</div>
+                </div>
+                <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+                <div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+                <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+            </div>
+        </header>
+
+        <article class="main-article">
+            <div class="main-article__content">
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+
+                <section class="features03 cid-rVs1KWs4Qc" id="features03-2">
+
+
+                    <div class="container justify-content-center">
+                        <h3 class="mbr-fonts-style mbr-section-subtitle align-center mbr-light pt-3 display-4">
+                            OFERTA</h3>
+                        <div class="badge_wrap align-center">
+                        </div>
+                        <h2 class="mbr-fonts-style mbr-section-title align-center display-2">Nasza Oferta<br></h2>
+                        <div class="media-container-row justify-content-center align-items-start main-wrapper">
+                            <div class="icon-main col-lg-3 col-md-6 col-12 without-before">
+                                <div class="process-icon process-icon-first">
+                                    <div class="wrapper-without-before">
+                                        <span class="icon-container">
+                                            <a href="#">
+                                                <span class="icon-wrapper icon1 mbr-iconfont fa-search fa mobi-mbri-home mobi-mbri"></span>
+                                            </a>
+                                            <span class="step step_1">1</span>
+                                        </span>
+                                    </div>
+                                    <h1 class="subicon-title mbr-fonts-style display-7">Kołki meblowe</h1>
+                                    <p class="subicon-text mbr-fonts-style display-4">-⌀6mm<br>-⌀8mm<br>-⌀10mm<br>-⌀12mm<br>-⌀16mm
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="icon-main col-lg-3 col-md-6 col-12">
+                                <div class="process-icon">
+                                    <div class="wrapper">
+                                        <span class="icon-container">
+                                            <a href="#">
+                                                <span class="mbr-iconfont icon2 icon-wrapper fa-th-list fa mobi-mbri-windows mobi-mbri"></span>
+                                            </a>
+                                            <span class="step step_2">2</span>
+                                        </span>
+                                    </div>
+                                    <h1 class="subicon-title mbr-fonts-style display-7">Kołki do drzwi i okien</h1>
+                                    <p class="subicon-text mbr-fonts-style display-4">Kolki dużych rozmiarów do
+                                        produkcji drewnianych drzwi i okien.</p>
+                                </div>
+                            </div>
+
+                            <div class="icon-main col-lg-3 col-md-6 col-12 third-elem">
+                                <div class="process-icon">
+                                    <div class="wrapper">
+                                        <span class="icon-container">
+                                            <a href="#">
+                                                <span class="mbr-iconfont icon3 icon-wrapper fa-share-alt fa mbri-menu"></span>
+                                            </a>
+                                            <span class="step step_3">3</span>
+                                        </span>
+                                    </div>
+                                    <h1 class="subicon-title mbr-fonts-style display-7">Patyki drewniane</h1>
+                                    <p class="subicon-text mbr-fonts-style display-4">Ryflowane lub gładkie o
+                                        długościach do 120cm.</p>
+                                </div>
+                            </div>
+
+                            <div class="icon-main col-lg-3 col-md-6 col-12">
+                                <div class="process-icon">
+                                    <div class="wrapper">
+                                        <span class="icon-container">
+                                            <a href="#">
+                                                <span class="mbr-iconfont icon4 icon-wrapper fa-list-alt fa mobi-mbri-unlock mobi-mbri"></span>
+                                            </a>
+                                            <span class="step step_4">4</span>
+                                        </span>
+                                    </div>
+                                    <h1 class="subicon-title mbr-fonts-style display-7">Półprodukty do cel dla
+                                        gołębi</h1>
+                                    <p class="subicon-text mbr-fonts-style display-4">Patyki do cel dla gołębi zarówno
+                                        gładkie jak i ryflowane.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="carousel slide" data-bs-interval="false" data-bs-touch="false"
+                     id="carouselExampleControlsNoTouching">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img alt="..." class="d-block w-100" src="img/kitchen.jpeg">
+                        </div>
+                        <div class="carousel-item">
+                            <img alt="..." class="d-block w-100" src="img/kitchen.jpeg">
+                        </div>
+                        <div class="carousel-item">
+                            <img alt="..." class="d-block w-100" src="img/kitchen.jpeg">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-slide="prev"
+                            data-bs-target="#carouselExampleControlsNoTouching" type="button">
+                        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-slide="next"
+                            data-bs-target="#carouselExampleControlsNoTouching" type="button">
+                        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim sit amet magna tincidunt
+                    vulputate. Suspendisse malesuada dolor erat, eget aliquet erat elementum eu. Nulla felis est, varius
+                    at ante vel, iaculis porttitor quam. Proin euismod, dolor et lacinia ornare, est ligula consectetur
+                    est, eget aliquam diam nisi vitae quam. Curabitur id ornare libero, ac interdum odio. Quisque purus
+                    lorem, mollis a placerat vitae, molestie at risus. Sed auctor pretium justo nec laoreet. Nam ante
+                    neque, venenatis eget consequat at, varius at elit. Duis bibendum risus nec auctor consectetur.
+
+                    Nulla velit leo, viverra sit amet tortor eget, ultricies ornare tellus. Suspendisse vulputate porta
+                    lorem in placerat. Cras quis libero aliquam, eleifend erat ut, molestie erat. Duis quis suscipit
+                    elit. Nam aliquam ligula eget arcu pellentesque gravida. Aliquam aliquam fringilla eros sit amet
+                    ultrices. Aliquam in dui sagittis, tristique massa non, dictum justo. Nunc sollicitudin rhoncus
+                    blandit. Quisque pharetra mollis vehicula. Nulla ultricies nunc ac lacus interdum, nec posuere sem
+                    malesuada. Curabitur aliquet ante dui, at auctor nibh pulvinar vel. Donec a vulputate arcu,
+                    condimentum suscipit lacus. Sed hendrerit sodales dignissim.
+
+                    Duis egestas nulla non enim luctus finibus. Mauris non dui eu orci pellentesque accumsan et ut est.
+                    Cras condimentum dictum faucibus. Aliquam erat volutpat. Vivamus gravida nulla blandit nisl
+                    sollicitudin ornare ut vitae erat. Vivamus cursus lorem molestie augue pharetra rutrum. Integer
+                    tempor pulvinar hendrerit. Cras ultricies facilisis tortor, euismod dictum lorem consectetur vel.
+                    Sed quis arcu facilisis, iaculis elit nec, vulputate eros. In hac habitasse platea dictumst. Sed in
+                    tristique est.
+
+                    Nam ex risus, sollicitudin eu augue vel, hendrerit sagittis nibh. Praesent luctus arcu non purus
+                    mollis egestas. Maecenas eleifend a elit nec porta. Curabitur et accumsan purus. Donec ullamcorper
+                    aliquet turpis et finibus. Quisque posuere ut mauris in efficitur. Sed ac enim quis felis suscipit
+                    placerat nec non est. Etiam a erat eget massa convallis ornare ornare fringilla nisi.
+
+                    Vestibulum vestibulum nec metus sit amet volutpat. Suspendisse vel euismod metus, sit amet porta
+                    est. Phasellus rhoncus, metus nec bibendum vulputate, nisi nunc cursus massa, at tincidunt elit
+                    lorem quis felis. Sed vitae libero odio. Vestibulum non ligula augue. Aenean condimentum tincidunt
+                    arcu, nec dignissim odio varius vel. Fusce facilisis, est et convallis elementum, mauris odio
+                    pharetra justo, ac aliquet metus quam eget dolor. In condimentum congue mauris eu commodo. Aenean
+                    orci eros, viverra a quam sed, pretium porttitor elit. Vestibulum ante ipsum primis in faucibus orci
+                    luctus et ultrices posuere cubilia curae; Curabitur lacus risus, feugiat eget ante eget, porta
+                    tincidunt tellus. Nunc ut malesuada risus. Duis a massa at ligula sodales dapibus. Proin euismod
+                    blandit nisl et iaculis. Vestibulum a ex turpis.
+
+                    Mauris dictum nec risus quis ultricies. Phasellus non enim tempor, tempus quam porta, pellentesque
+                    nibh. Duis volutpat dui vel quam ultricies varius. Vivamus lacinia ligula in rhoncus dapibus. Nam
+                    vel massa non orci varius rutrum. Nunc non eros in leo volutpat imperdiet. Donec egestas iaculis
+                    blandit. Praesent quis dolor eget erat blandit malesuada. Morbi sagittis turpis eu est consectetur
+                    ultrices. Cras sodales diam tellus, non gravida justo interdum quis. Nam eget lobortis urna, eget
+                    cursus ex. Phasellus vehicula venenatis suscipit.
+
+                    Vestibulum volutpat risus ac neque finibus, sed dapibus nunc bibendum. Fusce hendrerit ipsum turpis,
+                    vel pulvinar tellus lobortis eget. Suspendisse sodales, tortor eget gravida pulvinar, diam nisi
+                    finibus enim, eu aliquet eros tellus in nibh. Morbi at mauris sit amet quam placerat maximus.
+                    Aliquam euismod ac velit ac mollis. Maecenas gravida a nunc a blandit. Interdum et malesuada fames
+                    ac ante ipsum primis in faucibus. Mauris convallis dui neque, sit amet imperdiet enim maximus id.
+                    Donec ultricies, mauris et ullamcorper eleifend, lectus neque tincidunt ex, at laoreet ex arcu at
+                    dolor. Donec massa sapien, suscipit et molestie vel, tempor nec lacus. Morbi nisl lorem, euismod ut
+                    lectus nec, imperdiet tempus odio. Maecenas congue neque in justo finibus finibus. Etiam id massa
+                    tempor, volutpat elit sit amet, efficitur dui. Sed quis elementum erat. Vivamus fringilla magna
+                    pharetra, ultrices neque vitae, porta nisl.
+
+                    Nunc gravida, lacus id accumsan accumsan, mauris lorem sagittis odio, sit amet porta erat arcu vel
+                    elit. Pellentesque a ultrices felis. Praesent sed tempus felis. Ut pulvinar dapibus nulla vel porta.
+                    Sed ac metus et ligula maximus fermentum sed ac leo. Cras facilisis mauris eu accumsan molestie.
+                    Mauris lorem eros, feugiat sed sapien vel, consectetur tincidunt mi. Proin consectetur mauris est,
+                    quis consequat ipsum convallis sed. Pellentesque et dui est. Phasellus ultricies feugiat ante ac
+                    tristique. Nam maximus dictum faucibus. Donec turpis sem, feugiat non aliquet ac, ullamcorper eu
+                    libero. Ut semper, mi vitae porta lacinia, sapien nulla bibendum sapien, molestie fringilla ligula
+                    quam vel nunc.
+
+                    Phasellus vitae nulla cursus, posuere mi dignissim, ultrices enim. Etiam convallis commodo metus,
+                    nec porttitor lorem consequat a. Nulla facilisi. Integer aliquam at dolor eget ornare. In ut quam in
+                    ante pharetra vestibulum ut quis tortor. Praesent consequat, nibh quis egestas accumsan, ipsum quam
+                    blandit elit, maximus tristique metus est nec quam. Donec vel accumsan risus, id lacinia nisi.
+
+                    Sed tincidunt lacus sed ipsum maximus, non interdum ante pulvinar. Suspendisse tempor hendrerit
+                    libero, vel tincidunt tortor aliquam id. In convallis nisl velit. Morbi in mollis diam. Etiam
+                    dignissim neque in neque ultrices, a facilisis tortor sodales. Vestibulum vitae gravida turpis.
+                    Vestibulum non tempus massa. Fusce arcu ligula, tempus sed sapien vel, molestie posuere mi. Integer
+                    tincidunt enim nec gravida euismod. Etiam non finibus tortor. Quisque at est consectetur, ornare
+                    augue non, pellentesque lectus. Vivamus vestibulum massa ac tincidunt auctor. Vivamus ullamcorper
+                    metus enim, at convallis libero ullamcorper a. Aliquam eu tincidunt dui.
+                </p>
+            </div>
+
+        </article>
+
+        <div class="wrapper">
             <div class="content">
 
-                <header class="main-header">
+                <div class="portfolio">
+                    <div class="container">
+                        <main class="gallery">
+
+                            <div data-speed=".9" class="gallery__left">
+
+                                <img class="gallery__item" src="img/work/1.jpg" alt="Alt">
+                                <img class="gallery__item" src="img/work/2.jpeg" alt="Alt">
+
+<!--                                <div class="text-block gallery__item">-->
+<!--                                    <h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>-->
+<!--                                    <p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>-->
+<!--                                </div>-->
 
 
-                    <div class="layers">
-                        <div class="layer__header">
-                            <div class="layers__title">BERLO WOODWORK</div>
-                        </div>
-                        <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
-                        <div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
-                        <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+                            </div>
+
+                            <div data-speed="1.1" class="gallery__right">
+
+                                <div class="text-block gallery__item">
+                                    <h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>
+                                    <p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+                                </div>
+
+                                <img class="gallery__item" src="img/work/5.jpeg" alt="Alt">
+                                <img class="gallery__item" src="img/work/4.jpeg" alt="Alt">
+
+                            </div>
+
+                        </main>
                     </div>
-                </header>
-
-                <article class="main-article">
-                    <div class="main-article__content">
-                        <br><br><br>
-                        <br><br><br>
-                        <br><br><br>
-                        <br><br><br>
-                        <br><br><br>
-                        <br><br><br>
-                        <br><br><br>
-                        <br><br><br>
-                        <br><br><br>
-                        <br><br><br>
-                        <br><br><br>
-                        <br><br><br>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim sit amet magna tincidunt vulputate. Suspendisse malesuada dolor erat, eget aliquet erat elementum eu. Nulla felis est, varius at ante vel, iaculis porttitor quam. Proin euismod, dolor et lacinia ornare, est ligula consectetur est, eget aliquam diam nisi vitae quam. Curabitur id ornare libero, ac interdum odio. Quisque purus lorem, mollis a placerat vitae, molestie at risus. Sed auctor pretium justo nec laoreet. Nam ante neque, venenatis eget consequat at, varius at elit. Duis bibendum risus nec auctor consectetur.
-
-                            Nulla velit leo, viverra sit amet tortor eget, ultricies ornare tellus. Suspendisse vulputate porta lorem in placerat. Cras quis libero aliquam, eleifend erat ut, molestie erat. Duis quis suscipit elit. Nam aliquam ligula eget arcu pellentesque gravida. Aliquam aliquam fringilla eros sit amet ultrices. Aliquam in dui sagittis, tristique massa non, dictum justo. Nunc sollicitudin rhoncus blandit. Quisque pharetra mollis vehicula. Nulla ultricies nunc ac lacus interdum, nec posuere sem malesuada. Curabitur aliquet ante dui, at auctor nibh pulvinar vel. Donec a vulputate arcu, condimentum suscipit lacus. Sed hendrerit sodales dignissim.
-
-                            Duis egestas nulla non enim luctus finibus. Mauris non dui eu orci pellentesque accumsan et ut est. Cras condimentum dictum faucibus. Aliquam erat volutpat. Vivamus gravida nulla blandit nisl sollicitudin ornare ut vitae erat. Vivamus cursus lorem molestie augue pharetra rutrum. Integer tempor pulvinar hendrerit. Cras ultricies facilisis tortor, euismod dictum lorem consectetur vel. Sed quis arcu facilisis, iaculis elit nec, vulputate eros. In hac habitasse platea dictumst. Sed in tristique est.
-
-                            Nam ex risus, sollicitudin eu augue vel, hendrerit sagittis nibh. Praesent luctus arcu non purus mollis egestas. Maecenas eleifend a elit nec porta. Curabitur et accumsan purus. Donec ullamcorper aliquet turpis et finibus. Quisque posuere ut mauris in efficitur. Sed ac enim quis felis suscipit placerat nec non est. Etiam a erat eget massa convallis ornare ornare fringilla nisi.
-
-                            Vestibulum vestibulum nec metus sit amet volutpat. Suspendisse vel euismod metus, sit amet porta est. Phasellus rhoncus, metus nec bibendum vulputate, nisi nunc cursus massa, at tincidunt elit lorem quis felis. Sed vitae libero odio. Vestibulum non ligula augue. Aenean condimentum tincidunt arcu, nec dignissim odio varius vel. Fusce facilisis, est et convallis elementum, mauris odio pharetra justo, ac aliquet metus quam eget dolor. In condimentum congue mauris eu commodo. Aenean orci eros, viverra a quam sed, pretium porttitor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur lacus risus, feugiat eget ante eget, porta tincidunt tellus. Nunc ut malesuada risus. Duis a massa at ligula sodales dapibus. Proin euismod blandit nisl et iaculis. Vestibulum a ex turpis.
-
-                            Mauris dictum nec risus quis ultricies. Phasellus non enim tempor, tempus quam porta, pellentesque nibh. Duis volutpat dui vel quam ultricies varius. Vivamus lacinia ligula in rhoncus dapibus. Nam vel massa non orci varius rutrum. Nunc non eros in leo volutpat imperdiet. Donec egestas iaculis blandit. Praesent quis dolor eget erat blandit malesuada. Morbi sagittis turpis eu est consectetur ultrices. Cras sodales diam tellus, non gravida justo interdum quis. Nam eget lobortis urna, eget cursus ex. Phasellus vehicula venenatis suscipit.
-
-                            Vestibulum volutpat risus ac neque finibus, sed dapibus nunc bibendum. Fusce hendrerit ipsum turpis, vel pulvinar tellus lobortis eget. Suspendisse sodales, tortor eget gravida pulvinar, diam nisi finibus enim, eu aliquet eros tellus in nibh. Morbi at mauris sit amet quam placerat maximus. Aliquam euismod ac velit ac mollis. Maecenas gravida a nunc a blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris convallis dui neque, sit amet imperdiet enim maximus id. Donec ultricies, mauris et ullamcorper eleifend, lectus neque tincidunt ex, at laoreet ex arcu at dolor. Donec massa sapien, suscipit et molestie vel, tempor nec lacus. Morbi nisl lorem, euismod ut lectus nec, imperdiet tempus odio. Maecenas congue neque in justo finibus finibus. Etiam id massa tempor, volutpat elit sit amet, efficitur dui. Sed quis elementum erat. Vivamus fringilla magna pharetra, ultrices neque vitae, porta nisl.
-
-                            Nunc gravida, lacus id accumsan accumsan, mauris lorem sagittis odio, sit amet porta erat arcu vel elit. Pellentesque a ultrices felis. Praesent sed tempus felis. Ut pulvinar dapibus nulla vel porta. Sed ac metus et ligula maximus fermentum sed ac leo. Cras facilisis mauris eu accumsan molestie. Mauris lorem eros, feugiat sed sapien vel, consectetur tincidunt mi. Proin consectetur mauris est, quis consequat ipsum convallis sed. Pellentesque et dui est. Phasellus ultricies feugiat ante ac tristique. Nam maximus dictum faucibus. Donec turpis sem, feugiat non aliquet ac, ullamcorper eu libero. Ut semper, mi vitae porta lacinia, sapien nulla bibendum sapien, molestie fringilla ligula quam vel nunc.
-
-                            Phasellus vitae nulla cursus, posuere mi dignissim, ultrices enim. Etiam convallis commodo metus, nec porttitor lorem consequat a. Nulla facilisi. Integer aliquam at dolor eget ornare. In ut quam in ante pharetra vestibulum ut quis tortor. Praesent consequat, nibh quis egestas accumsan, ipsum quam blandit elit, maximus tristique metus est nec quam. Donec vel accumsan risus, id lacinia nisi.
-
-                            Sed tincidunt lacus sed ipsum maximus, non interdum ante pulvinar. Suspendisse tempor hendrerit libero, vel tincidunt tortor aliquam id. In convallis nisl velit. Morbi in mollis diam. Etiam dignissim neque in neque ultrices, a facilisis tortor sodales. Vestibulum vitae gravida turpis. Vestibulum non tempus massa. Fusce arcu ligula, tempus sed sapien vel, molestie posuere mi. Integer tincidunt enim nec gravida euismod. Etiam non finibus tortor. Quisque at est consectetur, ornare augue non, pellentesque lectus. Vivamus vestibulum massa ac tincidunt auctor. Vivamus ullamcorper metus enim, at convallis libero ullamcorper a. Aliquam eu tincidunt dui.
-                        </p>
-                    </div>
-                    <div class="copy">© WebDesign Master</div>
-                </article>
-
+                </div>
 
             </div>
         </div>
 
-    <script src="scr/nav.js"></script>
-    <script src="scr/lang.js"></script>
-    <script src="scr/hover.js"></script>
+
+    </div>
+</div>
+
+<script src="scr/nav.js"></script>
+<script src="scr/lang.js"></script>
+<script src="scr/hover.js"></script>
 </body>
 </html>
