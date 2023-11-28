@@ -9,6 +9,7 @@
 }
 
 :root {
+	--bs-border-width: 2px;
 	--steel-dark: #242930;
 	--index: calc(1vw + 1vh);
 	--text: #e7e7e0;
@@ -28,8 +29,8 @@
 	font-weight: 900;
 }
 body {
-	background-color: #0e0e0e;
-	font-family: raleway_f, sans-serif;
+	background-color: #181818;
+	font-family: raleway_xf, sans-serif;
 	line-height: 1.55;
 }
 .main-header {
@@ -178,6 +179,7 @@ body {
 	line-height: .9;
 }
 .gallery {
+	width: 95vw;
 	display: flex;
 	padding: calc(var(--index) * 8) 0;
 }
@@ -194,11 +196,15 @@ body {
 	border-radius: 8px;
 }
 .gallery__left {
+	padding: 0 10px 0 20px;
 	margin-top: calc(var(--gallery-gap) * 1.75);
 }
+.gallery__right {
+	padding: 0 20px 0 10px;
+}
+
 .gallery__right .gallery__item {
-	margin: 0;
-	margin-top: var(--gallery-gap);
+	margin: var(--gallery-gap) 0 0;
 }
 .text-block {
 	color: var(--color-text);
@@ -212,4 +218,15 @@ body {
 }
 .text-block__p {
 	line-height: 1.75;
+}
+
+@media (max-width: 576px) {
+	.gallery {
+		flex-wrap: wrap;
+	}
+	.gallery__item {
+		max-width: calc(var(--index) * 27);
+		margin-top: 20px !important;
+		margin-bottom: 20px !important;
+	}
 }
