@@ -22,7 +22,7 @@ footer {
     color: #e0e0e0 !important;
 }
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
     .align-center-when-mobile {
         align-items: center;
     }
