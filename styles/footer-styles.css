@@ -19,7 +19,7 @@ footer {
 }
 
 .text-white-cus {
-    color: #e0e0e0 !important;
+    color: var(--grey-white) !important;
 }
 
 @media (max-width: 768px) {

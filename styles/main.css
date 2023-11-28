@@ -10,7 +10,9 @@
 
 :root {
 	--bs-border-width: 2px;
+	--grey-white: #e0e0e0;
 	--steel-dark: #242930;
+	--wooden-brown: #ac7644;
 	--index: calc(1vw + 1vh);
 	--text: #e7e7e0;
 	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);

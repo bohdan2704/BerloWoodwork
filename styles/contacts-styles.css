@@ -1,0 +1,26 @@
+.card-deck {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 3rem;
+}
+
+.card-header:first-child {
+    border-radius: 10px;
+}
+
+.btn-block {
+    color: var(--grey-white) ;
+    border-color: #9d822b;
+    background-color: var(--wooden-brown);
+}
+
+.btn-block:hover {
+    color: white;
+    background-color: var(--wooden-brown);
+}
