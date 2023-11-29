@@ -9,9 +9,10 @@ window.onscroll = function() {
     let layersMiddle = document.querySelector('.layers__middle');
 
     if (scrollTop > 0) {
+        layersMiddle.style.transition = "opacity 0s"; // Adjust the duration as needed
         layersMiddle.style.opacity = "0";
-
     } else {
+        layersMiddle.style.transition = "opacity 0.5s"; // Adjust the duration as needed
         layersMiddle.style.opacity = "1";
     }
 
