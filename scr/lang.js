@@ -1,8 +1,8 @@
 const langArray = {
-    "about-us": {
+    "about-us-nav": {
 
     },
-    "contacts": {
+    "contacts-nav": {
 
     },
     "price": {

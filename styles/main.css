@@ -187,7 +187,7 @@ body {
 .gallery {
 	width: 95vw;
 	display: flex;
-	padding: calc(var(--index) * 8) 0;
+	/*padding: calc(var(--index) * 8) 0;*/
 }
 .gallery > * {
 	flex: 1;

@@ -31,3 +31,16 @@
 .title-block {
     background-color: var(--light-wooden-brown);
 }
+
+.dovel-img {
+    width: 400px;
+}
+
+.about-us-container {
+    max-width: 600px;
+    width: 100vw;
+}
+
+.wrapper-about-us {
+    background-color: var(--light-wooden-brown);
+}
