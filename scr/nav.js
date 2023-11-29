@@ -8,6 +8,14 @@ window.onscroll = function() {
     let layersTitle = document.querySelector('.layers__title');
     let layersMiddle = document.querySelector('.layers__middle');
 
+    if (scrollTop > 0) {
+        layersMiddle.style.opacity = "0";
+
+    } else {
+        layersMiddle.style.opacity = "1";
+    }
+
+
         // layersMiddle.style.opacity = "100";
         // let num = scrollTop - 300;
         // if (num > 100) {
@@ -24,26 +32,26 @@ window.onscroll = function() {
 
         if (scrollTop > lastScrollTop) {
             wasActionBefore = true;
-            currentOpacity -= 0.3;
-            currentFontSize += 0.1;
+            // currentOpacity -= 0.05;
+            // currentFontSize += 0.1;
 
         } else if (wasActionBefore) {
             // console.log(currentFontSize);
-            currentOpacity += 0.3;
-            currentFontSize -= 0.1;
+            // currentOpacity += 0.05;
+            // currentFontSize -= 0.1;
         }
         console.log(currentOpacity);
-        layersMiddle.style.opacity = currentOpacity.toString();
-        layersTitle.style.fontSize = currentFontSize + 'px';
+        // layersMiddle.style.opacity = currentOpacity.toString();
+        // layersTitle.style.fontSize = currentFontSize + 'px';
     } else {
         var classList = navbar.classList;
         if (classList.contains('scrolled')) {
             navbarBrand.classList.remove('scrolled')
             classList.remove('scrolled')
         }
-        layersMiddle.style.opacity = "1";
-        layersTitle.style = "";
-        wasActionBefore = false;
+        // layersMiddle.style.opacity = "1";
+        // layersTitle.style = "";
+        // wasActionBefore = false;
     }
     lastScrollTop = scrollTop;
 };

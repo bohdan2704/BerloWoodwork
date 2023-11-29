@@ -33,6 +33,7 @@
 	font-weight: 900;
 }
 body {
+	overflow-x: hidden;
 	background-color: #181818;
 	font-family: raleway_xf, sans-serif;
 	line-height: 1.55;
@@ -75,10 +76,11 @@ body {
 	transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
 	z-index: 0;
 }
+
 .layers__middle {
 	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
 	opacity: 1;
-	transition: 5s, ease;
+	transition: 2s, ease;
 }
 
 .layers__middle:hover {

@@ -20,7 +20,7 @@
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/footer-styles.css" rel="stylesheet">
     <link href="styles/contacts-styles.css" rel="stylesheet">
-
+    <link href="styles/forms-styles.css" rel="stylesheet">
 
 </head>
 <body>
@@ -88,22 +88,21 @@
 
         <article class="main-article">
             <div class="main-article__content">
-                <br><br><br>
-                <br><br><br>
-                <br><br><br>
-                <br><br><br>
-                <br><br><br>
-                <br><br><br>
-                <br><br><br>
-                <br><br><br>
-                <br><br><br>
-                <br><br><br>
-                <br><br><br>
-                <br><br><br>
-                <svg style="width: 100vw; margin-top: 10px;" xmlns="http://www.w3.org/2000/svg" class="fill-wooden mbr-z-index20" preserveAspectRatio="none" viewBox="0 0 1070 52">
-                    <path d="M0,0S247,91,505,32c261.17-59.72,565-13,565-13V0Z" fill="#181818"></path>
-                </svg>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
                 <div class="offers">
+                    <svg style="position: relative !important; margin-top: -1px; margin-bottom: 16px" xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper position-absolute mbr-z-index20" preserveAspectRatio="none" viewBox="0 0 1070 52">
+                        <path d="M0,0S247,91,505,32c261.17-59.72,565-13,565-13V0Z" fill="#181818"></path>
+                    </svg>
                     <h5 class="text-white text-center p-5">OFFERS</h5>
                     <div class="blocks pb-5">
                         <div class="column">
@@ -192,6 +191,32 @@
             </div>
         </div>
 
+        <div class="title-block">
+        </div>
+        <div class="form-wrapper">
+            <h5 class="text-white text-center">LEAVE A MESSAGE</h5>
+
+            <div class="form-block">
+                <form>
+                    <div class="form-group pb-4">
+                        <label class="pb-2" for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Ask us</span>
+                        </div>
+                        <textarea style="height: 100px" class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="buttons">
+                        <button  type="submit" class="btn"><span></span><p data-title="ask us" data-text="send"></p></button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
         <h5 class="p-5 text-white text-center">ADDRESS</h5>
         <h2 class="ps-3 pr-3 address-title text-white text-center">Mekhanizatoriv St, 1, Drohobych, L'vivs'ka oblast, 82100</h2>
 
@@ -206,7 +231,10 @@
                         <li><a class="text-muted" href="mailto:info.berlo@ukr.net">workberlo@gmaіl.com</a></li>
                         <li>+38 067-321-63-84</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block">Call us</button>
+                    <div class="buttons">
+                        <a href="tel:+38 067-321-63-84"><button class="btn"><span></span><p data-title="contact" data-text="call us!"></p></button></a>
+                    </div>
+<!--                    <button type="button" class="btn btn-lg btn-block">Call us</button>-->
                 </div>
             </div>
 
@@ -220,7 +248,10 @@
                         <li><a class="text-muted" href="mailto:workberlo@gmaіl.com">workberlo@gmaіl.com</a></li>
                         <li>+38 097-662-35-22</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block">Call us</button>
+                    <div class="buttons">
+                        <a href="tel:+38 097-662-35-22"><button class="btn"><span></span><p data-title="contact" data-text="call us!"></p></button></a>
+                    </div>
+<!--                    <button type="button" class="btn btn-lg btn-block">Call us</button>-->
                 </div>
             </div>
         </div>
@@ -231,7 +262,7 @@
         </div>
 
         <footer>
-            <svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper position-absolute mbr-z-index20" preserveAspectRatio="none" viewBox="0 0 1070 52">
+            <svg style="margin-top: -1px; margin-bottom: 16px" xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper position-absolute mbr-z-index20" preserveAspectRatio="none" viewBox="0 0 1070 52">
                 <path d="M0,0S247,91,505,32c261.17-59.72,565-13,565-13V0Z" fill="#181818"></path>
             </svg>
             <div class="footer-block">
